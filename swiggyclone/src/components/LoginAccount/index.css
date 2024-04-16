@@ -1,0 +1,60 @@
+.topnav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.middleLoginAccount{
+    background-color: rgb(219, 232, 240);
+    width: 100%;
+    padding: 15px;
+}
+.bottomOfLoginacount{
+    display: flex;
+    flex-direction: column;
+}
+.horizontal{
+    border: 2px solid black;
+}
+.Loginaccount{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.icons{
+    padding: 0px 10px;
+}
+.top-left-timespace{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+
+}
+.termsandcondition{
+    font-weight: bold;
+}
+.offerandsendsection{
+    margin-left: 25px;
+}
+.buttonoflogin{
+    background-color: #fc8019;
+    color: white;
+    border: none;
+    height: 46px;
+    text-align: center;
+    font-size: 18px;
+}
+.inloginaccount{
+    width: 500px;
+    height: 100vh;
+}
+.bottomSection{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+}
