@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { FaLocationArrow, FaSignal, FaWifi, FaBatteryHalf, FaArrowLeft } from "react-icons/fa";
-import { BiSolidOffer, BiMailSend } from "react-icons/bi";
-import "./index.css"
+import { BiSolidOffer, BiMailSend } from "react-icons/bi"; 
+import "./index.css";
 
 const LoginAccount = props => {
   const [currentTime, setCurrentTime] = useState(new Date());
@@ -17,8 +17,8 @@ const LoginAccount = props => {
   }, []);
 
   const moveTONext = () => {
-    const {history}=props
-    history.replace('/login')
+    const{history}=props
+    history.replace('/login');
   };
   
 
@@ -41,7 +41,7 @@ const LoginAccount = props => {
           <h1>LIVE</h1>
           <h1>FOR</h1>
           <h1>FOOD</h1>
-          <img src="/path/to/image.png" alt="" /> {/* Replace with correct image path */}
+          <img src="/path/to/image.png" alt="" />
         </div>
         <div className="bottomOfLoginacount">
           <h2>ACCOUNT</h2>
@@ -50,7 +50,7 @@ const LoginAccount = props => {
             Login
           </button>
           <p>
-            By clicking, I accept the <span className="termsandcondition">Terms & Conditions</span>
+            By clicking, I accept the <span className="termsandcondition">Terms & Conditions & Privacy Policy</span>
           </p>
           <hr />
           <div className="bottomSection">

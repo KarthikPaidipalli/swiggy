@@ -1,0 +1,51 @@
+
+.Loginaccountphonenumber{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;  
+}
+
+.inloginaccountphonenumber{
+    width: 500px;
+    height: 100vh;
+}
+.phonenumeberbottom{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.numberdial{
+    font-size: 25px;
+}
+.entireningphonenumber{
+    font-size: 25px;
+}
+.textboxnumber{
+    height: 40px;
+    width: 70%;
+    border: none;
+    font-size: 25px;
+}
+.line{
+    border: 1px solid  #fc8019
+}
+.continuebutton{
+    background-color: #fc8019;
+    color: white;
+    border: none;
+    height: 46px;
+    text-align: center;
+    font-size: 18px;
+    width: 100%;
+}
+.numbersclickbutton{
+    width: 120px;
+    height: 50px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
