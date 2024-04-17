@@ -17,11 +17,9 @@ const LoginAccount = props => {
   }, []);
 
   const moveTONext = () => {
-    const{history}=props
+    const {history}=props
     history.replace('/login');
   };
-  
-
   return (
     <div className="Loginaccount">
       <div className="inloginaccount">
@@ -41,7 +39,7 @@ const LoginAccount = props => {
           <h1>LIVE</h1>
           <h1>FOR</h1>
           <h1>FOOD</h1>
-          <img src="/path/to/image.png" alt="" />
+          <img src="Ellipse 4.jpg" alt="text" />
         </div>
         <div className="bottomOfLoginacount">
           <h2>ACCOUNT</h2>

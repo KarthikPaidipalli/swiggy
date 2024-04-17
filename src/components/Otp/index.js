@@ -4,26 +4,42 @@ import "./index.css";
 
 const Otp = props => {
   const [currentTime, setCurrentTime] = useState(new Date());
-  const [otpNumber, setNumber]=useState("")
+  const [otpNumber, setNumber] = useState("");
+  const [countval, setCountval] = useState(30);
 
   useEffect(() => {
     const timerID = setInterval(() => {
       setCurrentTime(new Date());
     }, 1000);
 
+    const countId = setInterval(() => {
+      setCountval(prev => {
+        if (prev === 0) {
+          clearInterval(countId);
+          return 0;
+        } else {
+          return prev - 1;
+        }
+      });
+    }, 1000);
+
     return () => {
       clearInterval(timerID);
+      clearInterval(countId);
     };
   }, []);
 
-  const clickedButtonotp = (num)=>{
-    setNumber(otpNumber+num)
-  }
+  const clickedButtonotp = num => {
+    setNumber(otpNumber + num);
+  };
 
-  const enteredotpnumber =(event)=>{
-    setNumber(event.target.value)
-  }
-  
+  const enteredotpnumber = event => {
+    setNumber(event.target.value);
+  };
+  const continueToHome = ()=>{
+    const{history}=props
+    history.replace("/home")
+  } 
 
   return (
     <div className="Loginaccount">
@@ -41,13 +57,15 @@ const Otp = props => {
         </div>
         <FaArrowLeft />
         <div>
-            <h1>Verify Details</h1>
-            <p>Otp sent to XXXXXXXXXX</p>
+          <h1>Verify Details</h1>
+          <p>Otp sent to XXXXXXXXXX</p>
         </div>
         <div>
-            <p>ENTER OTP</p>
-            <input type="text" value={otpNumber} onChange={enteredotpnumber} className="otpinputelement"/>
-        <div className="phonenumeberbottom">
+          <p>ENTER OTP</p>
+          <input type="text" value={otpNumber} onChange={enteredotpnumber} className="otpinputelement" />
+          <p>Didn't receive the OTP? Retry in 00:{countval}</p>
+          <button className="otppin" onClick={continueToHome}>VERIFY AND PROCEED</button>
+          <div className="phonenumeberbottom">
             <button className="numbersclickbutton" onClick={() => clickedButtonotp("1")}><span className="numberdial">1</span><span></span></button>
             <button className="numbersclickbutton" onClick={() => clickedButtonotp("2")}><span className="numberdial">2</span><span>ABC</span></button>
             <button className="numbersclickbutton" onClick={() => clickedButtonotp("3")}><span className="numberdial">3</span><span>DEF</span></button>
@@ -65,4 +83,4 @@ const Otp = props => {
   );
 };
 
-export default Otp
+export default Otp;

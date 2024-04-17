@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+20&display=swap');
+.addingtransition{
+    background-image: linear-gradient(to bottom,bisque, white);
+    height: 400px;
+}
+.scrollcards{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.scrollimage{
+    height: 80px;
+    width: 100px;
+}
+.sectionof{
+    height: 100%;
+}
+.top-foodsection{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.offersimage{
+    height: 100px;
+    width: 160px;
+}
+.exclusive{
+    background-color: rgb(126, 57, 57);
+    color: white;
+    font-weight: bold;
+    border-radius: 30px;
+    border: none;
+}
+.foodheading{
+    color: rgb(235, 83, 13);
+    font-family: "Jersey 20", sans-serif;
+
+}
+.foodparagraph{
+    font-weight: bold;
+}

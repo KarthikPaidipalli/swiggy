@@ -30,7 +30,6 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin: 10px;
     padding: 10px;
 
 }
@@ -38,7 +37,7 @@
     font-weight: bold;
 }
 .offerandsendsection{
-    margin-left: 25px;
+    padding-left: 25px;
 }
 .buttonoflogin{
     background-color: #fc8019;

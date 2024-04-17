@@ -27,7 +27,7 @@ const LoginPhonenumber = (props) => {
 
   const goForOtp = () => {
     if (phoneNumber.length === 10) {
-      const { history } = props;
+      const {history} = props;
       history.replace("/otp");
     } else if (phoneNumber.length < 10) {
       setError(true);

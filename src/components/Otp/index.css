@@ -2,3 +2,12 @@
     width: 100%;
     height: 40px;
 }
+.otppin{
+    background-color: #fc8019;
+    color: white;
+    border: none;
+    height: 46px;
+    text-align: center;
+    font-size: 18px;
+    width: 100%;
+}
