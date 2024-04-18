@@ -52,7 +52,7 @@ const Home = props => {
         </div>
         <div>
             <div className="top-middple">
-                <input type="search" className="searchelement"/>
+                <input type="search" className="searchelement" placeholder="Search for Pizza"/>
                <button className="searchbutton"> <FiSearch className="icons" size={20}/></button>
                 <button className="micbutton"><FaMicrophone className="icons" size={20} color="brown"/></button>
             </div>

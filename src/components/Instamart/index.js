@@ -10,12 +10,11 @@ import { MdLocalGroceryStore } from "react-icons/md";
 import { IoRestaurantOutline } from "react-icons/io5";
 import { BsCreditCard2Front } from "react-icons/bs";
 import { Link } from "react-router-dom/cjs/react-router-dom.min";
-import Slider from 'react-slick'
 import { BiSolidOffer } from "react-icons/bi";
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
 
-const Food = props => {
+const Instamart = props => {
   const [currentTime, setCurrentTime] = useState(new Date());
 
   useEffect(() => {
@@ -27,11 +26,6 @@ const Food = props => {
       clearInterval(timerID);
     };
   }, []);
-  const settings = {
-    dots: true,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-  }
   return (
     <div className="Loginaccount">
       <div className="inloginaccount">
@@ -77,40 +71,6 @@ const Food = props => {
                 <img src="https://img.freepik.com/free-vector/combo-meals-offer-vertical-banners-pack_23-2148679411.jpg?t=st=1713379081~exp=1713382681~hmac=5d193c15f9e055955a48fb9b5816cc5b904edfdfe4bf0a817753739a5e6987c5&w=996" alt="" className="offersimage"/>
             </div>
             
-            <div>
-                <Slider {...settings}>
-                    <div>
-                       <div className="scrollcards">
-                       <div>
-                            <h3>CHICKEN WINGS DEAL AT @329</h3>
-                            <p>11 pcs boneless wings: save 25% exclusive on swiggy</p>
-                            <button className="ordernowbutton">ORDER NOW</button>
-                        </div>
-                        <img src="https://img.freepik.com/free-photo/fried-chicken-french-fries-white-plate_74190-4869.jpg?t=st=1713380372~exp=1713383972~hmac=2986344b9bcb939d7c146c1715d4bfcbff375fac18640639c759a7f5644a776c&w=996" alt="" className="scrollimage"/>
-                       </div>
-                    </div>
-                    <div>
-                    <div className="scrollcards">
-                       <div>
-                            <h3>PIZZA @159</h3>
-                            <p>Order 2 Pizzas and get 1 Coke free</p>
-                            <button className="ordernowbutton">ORDER NOW</button>
-                        </div>
-                        <img src="https://img.freepik.com/free-photo/top-view-pepperoni-pizza-sliced-into-six-slices_141793-2157.jpg?t=st=1713452437~exp=1713456037~hmac=5bed83a2c3750fd5f313a774c1fb45ff7444d7cabe3a15538e275d5968008638&w=996" alt="" className="scrollimage"/>
-                       </div>
-                    </div>
-                    <div>
-                    <div className="scrollcards">
-                       <div>
-                            <h3>BURGER AT @99</h3>
-                            <p>Order 3 Burgers get 1 free</p>
-                            <button className="ordernowbutton">ORDER NOW</button>
-                        </div>
-                        <img src="https://img.freepik.com/free-photo/tasty-burger-isolated-white-background-fresh-hamburger-fastfood-with-beef-cheese_90220-1063.jpg?t=st=1713452290~exp=1713455890~hmac=7b64f141f6c65e7c908c54e20927f94e5e8f0e5c5b2e75234b4b0f7e5400ff14&w=740" alt="" className="scrollimage"/>
-                       </div>
-                    </div>
-                </Slider>
-            </div>
             <h2>OFFERS FOR YOU</h2>
             <div>
                 <div className="offerscard">
@@ -182,4 +142,4 @@ const Food = props => {
   );
 };
 
-export default Food;
+export default Instamart;

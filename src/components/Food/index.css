@@ -3,6 +3,21 @@
     background-image: linear-gradient(to bottom,bisque, white);
     height: 400px;
 }
+.ordernowbutton{
+    background-color: rgb(97, 24, 24);
+    color: white;
+    border-radius: 20px;
+}
+.offerscard{
+    background-color: azure;
+    padding: 15px;
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
 .scrollcards{
     display: flex;
     flex-direction: row;
@@ -14,7 +29,7 @@
     width: 100px;
 }
 .sectionof{
-    height: 100%;
+    height: 100vh;
 }
 .top-foodsection{
     display: flex;

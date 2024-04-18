@@ -5,6 +5,7 @@ import LoginPhonenumber from "./components/LoginPhonenumber";
 import Otp from "./components/Otp";
 import Home from "./components/Home";
 import Food from "./components/Food";
+import Instamart from "./components/Instamart";
 function App() {
   return (
     <BrowserRouter>
@@ -14,6 +15,7 @@ function App() {
         <Route exact path="/otp" component={Otp}/>
         <Route exact path="/home" component={Home}/>
         <Route exact path="/food" component={Food}/>
+        <Route exact path="/instamart" component={Instamart}/>
       </Switch>
     </BrowserRouter>
   );
