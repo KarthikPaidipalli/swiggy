@@ -10,9 +10,6 @@ import { MdLocalGroceryStore } from "react-icons/md";
 import { IoRestaurantOutline } from "react-icons/io5";
 import { BsCreditCard2Front } from "react-icons/bs";
 import { Link } from "react-router-dom/cjs/react-router-dom.min";
-import { BiSolidOffer } from "react-icons/bi";
-import 'slick-carousel/slick/slick.css'
-import 'slick-carousel/slick/slick-theme.css'
 
 const Instamart = props => {
   const [currentTime, setCurrentTime] = useState(new Date());
@@ -57,59 +54,76 @@ const Instamart = props => {
             </div>
             <div>
                 <div className="top-middple">
-                    <input type="search" className="searchelement" placeholder="Search for Pizza"/>
+                    <input type="search" className="searchelement" placeholder="Search for grocery"/>
                     <button className="searchbutton"> <FiSearch className="icons" size={20}/></button>
                     <button className="micbutton"><FaMicrophone className="icons" size={20} color="brown"/></button>
                 </div>
             </div>
-            <div className="top-foodsection">
-                <div>
-                    <button className="exclusive">ONE EXCLUSIVE</button>
-                    <h1 className="foodheading">FOOD FIESTA</h1>
-                    <p><span className="foodparagraph">2 OFFERS IN 1</span> ORDER</p>
-                </div>
-                <img src="https://img.freepik.com/free-vector/combo-meals-offer-vertical-banners-pack_23-2148679411.jpg?t=st=1713379081~exp=1713382681~hmac=5d193c15f9e055955a48fb9b5816cc5b904edfdfe4bf0a817753739a5e6987c5&w=996" alt="" className="offersimage"/>
-            </div>
-            
-            <h2>OFFERS FOR YOU</h2>
             <div>
-                <div className="offerscard">
-                    <BiSolidOffer size={40} />
-                    <div>
-                        <h3>More Offers</h3>
-                        <p>Buy 1 Get 1 & More</p>
+                <img src="https://img.freepik.com/free-vector/flat-supermarket-sale-background_23-2149379271.jpg?t=st=1713461988~exp=1713465588~hmac=976a270179006c0dcec95acd95ce704a40a0d7fe4748359acc4bfdf6041d37a0&w=1060" alt="" className="instamartimage"/>
+            </div>
+            <div>
+                <div className="cardsofessentials">
+                    <div className="trying">
+                    <div className="aligingcards">
+                        <div className="cardofessentails">
+                            <img src="https://img.freepik.com/free-photo/top-view-brown-bean-soup-delicious-cooked-soup-with-different-seasonings-dark-surface-dinner-soup-bean-food-meal_140725-74440.jpg?t=st=1713462896~exp=1713466496~hmac=173595ca5a35f24b1801e7d436547761586be3098b2dde90eaa8d279e4134183&w=996" alt="" className="martimage"/>
+                        </div>
+                        <p>Cooking Essential</p>
+                    </div>
+                    <div className="aligingcards">
+                        <div className="cardofessentails">
+                            <img src="https://img.freepik.com/free-photo/assortment-bath-concept-with-soap-towel-box_23-2148295990.jpg?t=st=1713463013~exp=1713466613~hmac=b38e4f38e1ebb3f8cc3aea3b728b6b3f6369cbe846a4b9f2396939c7a413745e&w=996" alt="" className="martimage"/>
+                        </div>
+                        <p>Personal care</p>
+                    </div>
+                    <div className="aligingcards">
+                        <div className="cardofessentails">
+                            <img src="https://img.freepik.com/free-vector/realistic-chips-package_1284-34786.jpg?t=st=1713463144~exp=1713466744~hmac=b660c0be10a1d55a81f1adb4b4edfdc631d0e065cb06d1e1cf9bc24a0fccf8cb&w=740" alt="" className="martimage"/>
+                        </div>
+                        <p>Snacks</p>
+                    </div>
+                    <div className="aligingcards">
+                        <div className="cardofessentails">
+                            <img src="https://img.freepik.com/free-photo/colorful-soda-drinks-macro-shot_53876-32240.jpg?t=st=1713463226~exp=1713466826~hmac=abe61d09e2410d517b7cfa7308cdc59ed4a693ba85e4d22dd1ddb5489e5fe09a&w=1380" alt="" className="martimage"/>
+                        </div>
+                        <p>Soft drinks</p>
+                    </div>
                     </div>
                 </div>
-                <div className="offerscard">
-                    <img src="https://img.freepik.com/free-photo/veg-biryani-veg-pulav-fried-rice-indian-food-generative-ai_1258-151588.jpg?t=st=1713455527~exp=1713459127~hmac=532710a940b31b6dc3209c5b5b1707deaba173e272e3be6bc3f7e9d4556f8930&w=996" alt="" className="scrollimage"/>
-                    <div>
-                    <h3>Biryani</h3>
-                    <p>Rs.259</p>
+                <h1>BEST PRICES ALWAYS AND FREE DELIVERY</h1>
+                <div className="cardsofessentials">
+                    <div className="trying">
+                    <div className="Items-card">
+                        <p>25% off</p>
+                        <h3>Save Rs.123</h3>
+                        <img src="https://img.freepik.com/free-photo/delicious-peanut-butter-table_144627-12427.jpg?t=st=1713463598~exp=1713467198~hmac=189786a63755921bcf133b8b859d208c12b6bcc18406a158e41ae137313d0174&w=996" alt="" className="imagesofitems"/>
+                    </div>
+                    <div className="Items-card">
+                        <p>15% off</p>
+                        <h3>Save Rs.75</h3>
+                        <img src="https://img.freepik.com/free-photo/chocolate-spread-nougat-cream-with-hazelnuts-glass-jar-concrete-copyspace_114579-4699.jpg?t=st=1713463967~exp=1713467567~hmac=f3177dd79a6ffd5e1af0313794c19595dcdb083d5d20688fd0ee890f5fd64343&w=740" alt="" className="imagesofitems"/>
+                    </div>
+                    <div className="Items-card">
+                        <p>25% off</p>
+                        <h3>Save Rs.123</h3>
+                        <img src="https://img.freepik.com/free-photo/delicious-peanut-butter-table_144627-12427.jpg?t=st=1713463598~exp=1713467198~hmac=189786a63755921bcf133b8b859d208c12b6bcc18406a158e41ae137313d0174&w=996" alt="" className="imagesofitems"/>
+                    </div>
+                    <div className="Items-card">
+                        <p>25% off</p>
+                        <h3>Save Rs.123</h3>
+                        <img src="https://img.freepik.com/free-photo/delicious-peanut-butter-table_144627-12427.jpg?t=st=1713463598~exp=1713467198~hmac=189786a63755921bcf133b8b859d208c12b6bcc18406a158e41ae137313d0174&w=996" alt="" className="imagesofitems"/>
+                    </div>
+                    <div className="Items-card">
+                        <p>25% off</p>
+                        <h3>Save Rs.123</h3>
+                        <img src="https://img.freepik.com/free-photo/delicious-peanut-butter-table_144627-12427.jpg?t=st=1713463598~exp=1713467198~hmac=189786a63755921bcf133b8b859d208c12b6bcc18406a158e41ae137313d0174&w=996" alt="" className="imagesofitems"/>
+                    </div>
                     </div>
                 </div>
-                <div className="offerscard">
-                    <img src="https://img.freepik.com/free-photo/top-view-pepperoni-pizza-sliced-into-six-slices_141793-2157.jpg?t=st=1713452437~exp=1713456037~hmac=5bed83a2c3750fd5f313a774c1fb45ff7444d7cabe3a15538e275d5968008638&w=996" alt="" className="scrollimage"/>
-                    
-                    <div>
-                    <h3>Pizza</h3>
-                    <p>Rs.199</p>
-                    </div>
-                </div>
-                <div className="offerscard">
-                    <img src="https://img.freepik.com/free-photo/fried-chicken-french-fries-white-plate_74190-4869.jpg?t=st=1713380372~exp=1713383972~hmac=2986344b9bcb939d7c146c1715d4bfcbff375fac18640639c759a7f5644a776c&w=996" alt="" className="scrollimage"/>
-                    <div>
-                    <h3>Wings</h3>
-                    <p>Rs.159</p>
-                    </div>
-                </div>
-                <div className="offerscard">
-                    <img src="https://img.freepik.com/free-photo/fried-chicken-french-fries-white-plate_74190-4869.jpg?t=st=1713380372~exp=1713383972~hmac=2986344b9bcb939d7c146c1715d4bfcbff375fac18640639c759a7f5644a776c&w=996" alt="" className="scrollimage"/>
-                    <h3>Wings</h3>
-                    <div>
-                    <h3>Wings</h3>
-                    <p>Rs.159</p>
-                    </div>
-                </div>
+                <h2>Order from any where and get the grocery to your door step</h2>
+                <h4>30 Minutes delivery</h4>
+                <button className="orderButton">Place Order</button>
             </div>
             </div>
         <div>

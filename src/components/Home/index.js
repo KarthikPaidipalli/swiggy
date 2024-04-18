@@ -88,7 +88,7 @@ const Home = props => {
                     <MdLocalGroceryStore size={25} />
                     <p>Instamart</p>
                 </Link>
-                <Link className="fottercard" to="resturan">
+                <Link className="fottercard" to="/resturan">
                 <IoRestaurantOutline size={25} />
                     <p>Dineout</p>
                 </Link>
